@@ -183,8 +183,64 @@ margin-top: 30px;
 }
 
 /* content section */
-.layout .section.item3 {
-  background-color: green;
+.layout .section.content {
+  background-color: rgb(228, 228, 228);;
   grid-column: 3/12;
   grid-row: 2/12;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 30px;
+}
+
+.section.content .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+  
+}
+
+.projects .grid-content {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.grid-content .left-corner.color {
+  background-color: orange;
+  width: 10px;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: 10px;
+}
+
+.grid-content .item-content {
+  margin: 5px 15px 5px 15px;
+  width: 100%;
+}
+
+.item-content div {
+  margin-bottom: 20px;
+}
+
+.item-content .project-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.item-content .description {
+  font-size: 1.6rem;
+}
+
+.grid-content .icons {
+  display: flex;
+  justify-content: end;
+}
+
+.icons .project-action-icons {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
 }
