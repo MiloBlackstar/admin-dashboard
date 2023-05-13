@@ -82,10 +82,11 @@
 }
 
 .user-section .user-icon {
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   border-radius: 35px;
   background-color: rgb(226, 226, 226);
+  margin-bottom: 5px;
 }
 
 .user-section .welcome {
@@ -243,4 +244,72 @@ margin-top: 30px;
   width: 30px;
   height: 30px;
   margin-right: 20px;
+}
+
+.section.content .additional-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr 1fr 6fr;
+  padding: 0px 20px;
+}
+
+.additional-content .announcements {
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  grid-row: 1/2;
+  padding: 20px;
+}
+
+.announcements .info {
+  padding: 5px 15px 5px 15px;
+  font-size: 1.5rem;
+}
+
+.info .title {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.info .description {
+  color:rgb(95, 95, 95);
+}
+
+.info.top {
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.info.bottom {
+  border-top: 1px solid rgb(206, 206, 206);
+}
+
+.additional-content .trending {
+  border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  grid-row: 3/3;
+  padding: 20px;
+}
+
+.trending .trending-topic {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.trending-topic .trending-user-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.trending-topic .user {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.trending-topic .title {
+  font-size: 1.6rem;
+  color:rgb(95, 95, 95);
 }
