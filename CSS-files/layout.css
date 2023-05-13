@@ -6,7 +6,7 @@
 /* Search-bar section with user welcome */
 .layout .section.top-bar {
   background-color: white;
-  grid-column: 4/12;
+  grid-column: 6/12;
   grid-row: 1/2;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -48,7 +48,7 @@
 .search-bar-section .right-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: end;
 }
 
 .right-section .bell-icon {
@@ -72,7 +72,7 @@
 
 .section.top-bar .welcome-user-section {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 10fr 7fr;
   align-items: center;
 }
 
@@ -102,17 +102,33 @@
   font-weight: bold;
 }
 
+.welcome-user-section .buttons-section {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.buttons-section .button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  background-color: dodgerblue;
+  margin-left: 30px;
+}
 
 /* Navbar section */
 .layout .section.item2 {
-  background-color: blue;
-  grid-column: 1/4;
+  background-color: dodgerblue;
+  grid-column: 1/6;
   grid-row: 1/12;
 }
 
 /* content section */
 .layout .section.item3 {
   background-color: green;
-  grid-column: 4/12;
+  grid-column: 6/12;
   grid-row: 2/12;
 }
